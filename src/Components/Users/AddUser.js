@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from './AddUser.module.css'
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
+import Button from "../UI/Button";
 
 const AddUser = (props) => {
     const [username, setUsername] = useState("");
@@ -56,7 +57,7 @@ const AddUser = (props) => {
                     <input id={"username"} type="text" onChange={usernameChangedHandler} value={username}/>
                     <label htmlFor="age">Age</label>
                     <input id={"age"} type="number" onChange={ageChangedHandler} value={age}/>
-                    <button type={'submit'}>Add User</button>
+                    <Button type={'submit'}>Add User</Button>
                 </form>
             </Card>
         </React.Fragment>
